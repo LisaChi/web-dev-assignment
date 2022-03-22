@@ -1,0 +1,10 @@
+body { 
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+}

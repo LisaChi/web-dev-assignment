@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: lightsalmon;
+    grid-area: header;
+}
+nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+main {
+    background-color: aquamarine;
+    grid-area: main;
+}
+footer {
+    background-color: lightsalmon;
+    grid-area: footer;
+}
