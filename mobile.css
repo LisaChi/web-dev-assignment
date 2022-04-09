@@ -22,11 +22,7 @@ nav {
 #showNav .on {display: block;}
 #showNav .off {display:none;}
 #showNav:target nav {display:block;}
-a {
-    text-decoration:none;
-    color: black;
-    font-size: 1.3em;
-}
+
 .on {
     height: 0.8em;
     width: 1.25em;

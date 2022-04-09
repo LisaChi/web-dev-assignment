@@ -3,11 +3,11 @@
     padding:0;
 }
 header{
-    background-color: lightsalmon;
+    background-color: aqua;
     grid-area: header;
 }
 nav {
-    background-color: yellow;
+    background-color: aqua;
     grid-area: nav;
 }
 main {
@@ -15,6 +15,11 @@ main {
     grid-area: main;
 }
 footer {
-    background-color: lightsalmon;
+    background-color: aqua;
     grid-area: footer;
+}
+a {
+    text-decoration:none;
+    color: black;
+    font-size: 1.3em;
 }
