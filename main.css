@@ -23,3 +23,27 @@ a {
     color: black;
     font-size: 1.3em;
 }
+.mainRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLeft {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h3"
+        "h1"
+        "h2";
+    padding-left: 0.5em;
+    text-align: center;
+
+}

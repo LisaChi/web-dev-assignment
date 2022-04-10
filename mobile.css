@@ -1,27 +1,50 @@
-body{
+body {
     background-color: purple;
     display: grid;
     grid-template-columns: 100%;
     grid-area: auto;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
 }
+
 nav {
     display: none;
-    position: fixed;
-    top: 0;
-    left:0;
-    height:50vh;
-    width:60%;
+        height: 100%;
+        width: 15em;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 50;
+        background-color: brown;
+        padding-top: 2em;
+        transform: translate(100%,0);
+        transition: transform 5s ease-in;
+    
 }
-#showNav:target .on {display:none;}
-#showNav:target .off {display:block;}
-#showNav .on {display: block;}
-#showNav .off {display:none;}
-#showNav:target nav {display:block;}
+
+#showNav:target .on {
+    display:none;
+}
+
+#showNav:target .off {
+    display: block;
+}
+
+#showNav .on {
+    display: block;
+}
+
+#showNav .off {
+    display: none;
+}
+
+#showNav:target nav {
+    display: block;
+    transform: translate(0, 0);
+}
 
 .on {
     height: 0.8em;
@@ -44,4 +67,41 @@ header {
     display: grid;
     grid-template-columns: 90% 10%;
     grid-template-rows: auto;
+}
+
+.home .mainRight img {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.home .mainLeft h1, h2, h3{
+    animation-name: textBig;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes textBig{
+    from{ font-size: 100%}
+    50% {font-size: 140%}
+    to {font-size: 100%}
+}
+
+
+.home .mainLeft {
+    padding: 1em;
+    margin: 1em;
+}
+.home {
+    background-image: linear-gradient(white, lightgray);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "mainLeft"
+        "mainRight";
+    height: 75vh;
+    padding: 3.5em;
 }
