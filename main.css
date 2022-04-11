@@ -11,9 +11,10 @@ nav {
     grid-area: nav;
 }
 main {
-    background-color: aquamarine;
+    background-color: transparent;
     grid-area: main;
 }
+
 footer {
     background-color: aqua;
     grid-area: footer;

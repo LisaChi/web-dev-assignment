@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+    background-image: linear-gradient(white, lightgray);
     display: grid;
     grid-template-columns: 100%;
     grid-area: auto;
@@ -95,7 +95,6 @@ header {
     margin: 1em;
 }
 .home {
-    background-image: linear-gradient(white, lightgray);
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
@@ -104,4 +103,28 @@ header {
         "mainRight";
     height: 75vh;
     padding: 3.5em;
+}
+.portolio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1"
+    "p2"
+    "p3";
+    height: 75vh;
+}
+.portolio .p1{
+    grid-area: p1;
+}
+.portolio .p2{
+    grid-area: p2;
+}
+.portolio .p3{
+    grid-area: p3;
+}
+.portolio .p1 img {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%; 
 }
