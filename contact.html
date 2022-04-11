@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="main.css" media="screen" />
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)" />
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)" />
-    <title>Portfolio</title>
+    <title>Homepage </title>
 </head>
 
 <body id="showNav">
     <header>
-        <h1>Portfolio</h1>
+        <h1>Homepage</h1>
         <a href="#showNav" class="on"></a>
         <a href="#" class="off">X</a>
     </header>
@@ -56,20 +56,26 @@
     <section class="bg"></section>
     <section class="bg bg2"></section>
     <section class="bg bg3"></section>
-    <main class="portfolio">
-        <section class="p1">
-            <h1>Project 1</h1>
-            <img src="project 1.jpg" alt="project1">
-        </section>
-        <section class="p2">
-            <h1>Project 2</h1>
-            <img src="project 2.png" alt="project2">
-        </section>
-        <section class="p3">
-            <h1>Project 3</h1>
-            <img src="project 3.webp" alt="project3">
-        </section>
-
+    <main class="contact">
+        <form action="mailto:lisachishaka@gmail.com?subject=Contact From" method="get">
+            <label for="firstName">First Name: </label><input type="text" name="firstName" id="firstName"
+                placeholder="Enter your firstname..." required>
+            <label for="surname">Surname: </label><input type="text" name="surname" id="surname"
+                placeholder="Enter Surname" required>
+            <label for="password">Password: </label><input type="password" name="password" id="password"
+                placeholder="Enter a password..." required>
+            <label for="emailadress">Enter email: </label><input type="email" name="emailadress" id="emailadress"
+                placeholder="Enter email..." required>
+            <label for="country">Subject</label><select name="country" id="country">
+                <option disabled selected value="pickOption">Pick an option</option>
+                <option value="option1">Job Application</option>
+                <option value="option2">Interest in Web Development</option>
+                <option value="option3">Other</option>
+            </select>
+            <label for="message">Other: </label><textarea name="message">Please enter any extra information
+            </textarea type="text" name="message" id="message" placeholder="Enter your message">
+            <input type="submit" value="Submit"/>
+        </form>
     </main>
     <footer>
         &copy; Lisa Chishaka
