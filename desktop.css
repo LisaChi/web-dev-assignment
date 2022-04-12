@@ -150,9 +150,8 @@ h3 {
     grid-template-areas:
         "p1 p2 p3";
     height: 75vh;
+    margin: 5em;
     animation:fadein 1s; 
-    align-items: center;
-    justify-content: center;
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
 
@@ -168,13 +167,37 @@ h3 {
     grid-area: p3;
 }
 
-.portfolio img {
-    width: 15em;
-    height: 15em;
+.portfolio img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
     border-radius: 50%;
-    background-position: center center;
-    background-size: cover;
-    object-fit:cover;
+    object-fit: cover;
+}
+.portfolio h1{
+ background: black;
+ color: white;
+ font-family: sans-serif;
+ transition: visibility 0s, opacity 0.5s linear;
+ display: none;
+}
+.portfolio section:hover h1{
+ opacity: 1; 
+ display: block;
+ padding: 0 0.2em;
+ text-decoration: underline;
+}
+
+.portfolio section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio section a h1 {
+    position: absolute;
 }
 
 .blog {
