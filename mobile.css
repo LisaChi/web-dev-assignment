@@ -78,7 +78,7 @@ header {
     width: 15em;
     height: 15em;
     border-radius: 50%;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     object-fit: cover;
 }
@@ -188,6 +188,14 @@ header {
 
 .blog h1 {
     text-decoration: underline;
+}
+.blog img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
 }
 .contact{
     animation:fadein 1s; 
