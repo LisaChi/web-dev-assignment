@@ -144,7 +144,7 @@ header {
     border-radius: 50%; 
     object-fit: cover;
 }
-.blog {
+.aboutMe {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 33% 33% 33%;
@@ -152,7 +152,7 @@ header {
         "aboutMe"
         "uniLife"
         "workLife";
-        margin-inline-start: 1em;
+        margin-inline-start: 1.3em;
     animation:fadein 1s; 
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
