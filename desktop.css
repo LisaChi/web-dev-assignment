@@ -84,7 +84,7 @@ body {
 nav ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
 }
 
