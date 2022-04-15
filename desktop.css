@@ -207,6 +207,78 @@ h3 {
 .portfolio p{
     padding-top: 2em;
 }
+.blog {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "beginning progression complete";
+    height: 65.6vh;
+    margin: 5em;
+    animation:fadein 1s; 
+}
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+.blog .beginning {
+    grid-area: beginning;
+    width: 20em;
+    padding: 1em;
+    border:  0.4em ridge gray;
+    text-align: center;
+}
+
+.blog .progression {
+    grid-area: progression;
+    width: 20em;
+    padding: 1em;
+    border:  0.4em ridge gray;
+    text-align: center;
+}
+
+.blog .complete {
+    grid-area: complete;
+    width: 20em;
+    padding: 1em;
+    border:  0.4em ridge gray;
+    text-align: center;
+}
+
+.blog img{
+    position: relative;
+    width: 10em;
+    height: 10em;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog h1{
+ background: black;
+ color: white;
+ font-family: sans-serif;
+ transition: visibility 0s, opacity 0.5s linear;
+ display: none;
+}
+.blog section:hover h1{
+ opacity: 1; 
+ display: block;
+ padding: 0 0.2em;
+ text-decoration: underline;
+}
+
+.blog section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog section a h1 {
+    position: absolute;
+}   
+
+.blog p{
+    padding-top: 2em;
+}
 .aboutMe {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -249,55 +321,6 @@ h3 {
     text-decoration: underline;
 }
 .aboutMe img {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    background-position: center center;
-    background-size: cover;
-    object-fit: cover;
-}
-.blog {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "beginning progression end";
-    margin: 5em;
-    height: 65.6vh;
-    animation:fadein 1s; 
-}
-@keyframes fadein { from {opacity:0} to {opacity:1} }
-.blog .beginning {
-    grid-area: beginning;
-    width: 20em;
-    padding: 1em;
-    border:  0.4em ridge gray;
-    text-align: center;
-}
-
-.blog .progression {
-    grid-area: progression;
-    width: 20em;
-    padding: 1em;
-    border:  0.4em ridge gray;
-    text-align: center;
-}
-
-.blog .end{
-    grid-area: end;
-    width: 20em;
-    padding: 1em;
-    border:  0.4em ridge gray;
-    text-align: center;
-}
-.blog p{
-    padding:3em;
-}
-
-.blog h1 {
-    text-decoration: underline;
-}
-.blog img {
     width: 10em;
     height: 10em;
     border-radius: 50%;
