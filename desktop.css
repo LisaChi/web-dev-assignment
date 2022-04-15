@@ -66,9 +66,10 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
         "mainLeft mainRight";
-    height: 75vh;
+    height: 49.5vh;
     padding: 3.15em;
     animation:fadein 1s; 
+    margin: 5em;
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
 
@@ -83,7 +84,7 @@ body {
 nav ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
     text-align: center;
 }
 
@@ -149,7 +150,7 @@ h3 {
     grid-template-rows: auto;
     grid-template-areas:
         "p1 p2 p3";
-    height: 65.7vh;
+    height: 65.6vh;
     margin: 5em;
     animation:fadein 1s; 
 }
@@ -205,6 +206,9 @@ h3 {
     border:  0.4em ridge gray;
     text-align: center;
 }
+.portfolio p{
+    padding-top: 2em;
+}
 .blog {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -212,7 +216,7 @@ h3 {
     grid-template-areas:
         "aboutMe uniLife workLife";
     margin: 5em;
-    height: 65.5vh;
+    height: 65.6vh;
     animation:fadein 1s; 
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
