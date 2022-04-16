@@ -92,6 +92,7 @@ footer {
     }
 }
 
+
 .home .mainLeft {
     grid-area: mainLeft;
 }
@@ -137,6 +138,34 @@ nav>ul>li:hover ul {
 ul ul li:hover {
     background-color: rgba(0, 0, 0, 0.068);
     text-decoration: underline black;
+}
+.mainLeft {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h3"
+        "h1"
+        "h2";
+    padding-left: 0.5em;
+    text-align: center;
+    animation-name: textBig;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes textBig {
+    from {
+        font-size: 100%
+    }
+
+    50% {
+        font-size: 200%
+    }
+
+    to {
+        font-size: 100%
+    }
 }
 
 .portfolio {
