@@ -111,39 +111,61 @@ header {
     animation:fadein 1s; 
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
-.portfolio{
+
+.portfolio {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 33% 33% 33%;
     grid-template-areas:
-    "p1"
-    "p2"
-    "p3";
-    height: 75vh;
-    text-align: center;
-    text-decoration: underline;
-    margin-inline-start: 1em;
+        "p1"
+        "p2"
+        "p3";
+        margin-inline-start: 1.3em;
     animation:fadein 1s; 
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
-.portfolio h1{
-    font-size: 2em;
-}
-.portfolio .p1{
+.portfolio .p1 {
     grid-area: p1;
+    width: 15em;
+    padding: 1em;
+    border:  0.4em ridge gray;
+    margin: 2em;
+    text-align: center;
 }
-.portfolio .p2{
+
+.portfolio .p2 {
     grid-area: p2;
+    width: 15em;
+    padding: 1em;
+    border:  0.4em ridge gray;
+    margin: 2em;
+    text-align: center;
 }
-.portfolio .p3{
+
+.portfolio .p3 {
     grid-area: p3;
+    width: 15em;
+    padding: 1em;
+    border:  0.4em ridge gray;
+    margin: 2em;
+    text-align: center;
+}
+.portfolio p{
+    padding:3em;
+}
+
+.portfolio h1 {
+    text-decoration: underline;
 }
 .portfolio img {
-    height: 10em;
     width: 10em;
-    border-radius: 50%; 
+    height: 10em;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
     object-fit: cover;
 }
+
 .aboutMe {
     display: grid;
     grid-template-columns: auto;
