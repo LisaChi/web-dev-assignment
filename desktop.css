@@ -139,27 +139,6 @@ ul ul li:hover {
     text-decoration: underline black;
 }
 
-.home .mainLeft {
-    animation-name: textBig;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes textBig {
-    from {
-        font-size: 100%
-    }
-
-    50% {
-        font-size: 200%
-    }
-
-    to {
-        font-size: 100%
-    }
-}
-
 .portfolio {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -423,9 +402,10 @@ ul ul li:hover {
     grid-column: 1/3;
 }
 
-.report {
+.report{
+    margin: 1em;
+    padding: 0.5em;
     text-align: center;
-    margin: 2em;
 }
 .report .validation {
     display: grid;
@@ -444,6 +424,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 
 .homepage {
     grid-area: homepage;
@@ -480,4 +461,3 @@ ul ul li:hover {
 .mobileCSS {
     grid-area: mobileCSS;
 }
-
