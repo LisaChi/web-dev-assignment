@@ -46,5 +46,21 @@ a {
         "h2";
     padding-left: 0.5em;
     text-align: center;
+    animation-name: textBig;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes textBig {
+    from {
+        font-size: 200%
+    }
 
+    50% {
+        font-size: 300%
+    }
+
+    to {
+        font-size: 200%
+    }
 }

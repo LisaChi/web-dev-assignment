@@ -16,13 +16,14 @@ body {
 }
 
 nav {
+        list-style: none;
         height: 100%;
         width: 15em;
         position: fixed;
         z-index: 1;
         top: 0;
         left: 50;
-        background-color: brown;
+        background-color: lightgray;
         padding-top: 2em;
         transform: translate(-100%,0);
         transition: transform 0.5s ease-in;
@@ -82,18 +83,6 @@ header {
     background-size: cover;
     object-fit: cover;
 }
-.home .mainLeft h1, h2, h3{
-    animation-name: textBig;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes textBig{
-    from{ font-size: 100%}
-    50% {font-size: 140%}
-    to {font-size: 100%}
-}
-
 
 .home .mainLeft {
     padding: 1em;
