@@ -15,10 +15,7 @@ main {
     grid-area: main;
 }
 
-footer {
-    background-color: aqua;
-    grid-area: footer;
-}
+
 a {
     text-decoration:none;
     color: black;

@@ -12,6 +12,16 @@ body {
         "main main"
         "footer footer";
 }
+footer {
+    background-color: aqua;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: auto auto;
+    justify-items: right;
+    align-items: right;
+    padding: 0 20%;   
+}
 
 .on,
 .off {
@@ -66,12 +76,21 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
         "mainLeft mainRight";
-    height: 49.5vh;
+    height: 48.5vh;
     padding: 3.15em;
-    animation:fadein 1s; 
+    animation: fadein 1s;
     margin: 5em;
 }
-@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 .home .mainLeft {
     grid-area: mainLeft;
@@ -120,9 +139,7 @@ ul ul li:hover {
     text-decoration: underline black;
 }
 
-.home .mainLeft h1,
-h2,
-h3 {
+.home .mainLeft {
     animation-name: textBig;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -131,17 +148,18 @@ h3 {
 
 @keyframes textBig {
     from {
-        font-size: 200%
+        font-size: 100%
     }
 
     50% {
-        font-size: 300%
+        font-size: 200%
     }
 
     to {
-        font-size: 200%
+        font-size: 100%
     }
 }
+
 .portfolio {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -150,9 +168,18 @@ h3 {
         "p1 p2 p3";
     height: 65.6vh;
     margin: 5em;
-    animation:fadein 1s; 
+    animation: fadein 1s;
 }
-@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 .portfolio .p1 {
     grid-area: p1;
@@ -166,7 +193,7 @@ h3 {
     grid-area: p3;
 }
 
-.portfolio img{
+.portfolio img {
     position: relative;
     width: 10em;
     height: 10em;
@@ -175,18 +202,20 @@ h3 {
     border-radius: 50%;
     object-fit: cover;
 }
-.portfolio h1{
- background: black;
- color: white;
- font-family: sans-serif;
- transition: visibility 0s, opacity 0.5s linear;
- display: none;
+
+.portfolio h1 {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    transition: visibility 0s, opacity 0.5s linear;
+    display: none;
 }
-.portfolio section:hover h1{
- opacity: 1; 
- display: block;
- padding: 0 0.2em;
- text-decoration: underline;
+
+.portfolio section:hover h1 {
+    opacity: 1;
+    display: block;
+    padding: 0 0.2em;
+    text-decoration: underline;
 }
 
 .portfolio section a {
@@ -198,15 +227,20 @@ h3 {
 .portfolio section a h1 {
     position: absolute;
 }
-.portfolio .p1,.p2,.p3{ 
+
+.portfolio .p1,
+.p2,
+.p3 {
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
-.portfolio p{
+
+.portfolio p {
     padding-top: 2em;
 }
+
 .blog {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -215,15 +249,24 @@ h3 {
         "beginning progression complete";
     height: 65.6vh;
     margin: 5em;
-    animation:fadein 1s; 
+    animation: fadein 1s;
 }
-@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 .blog .beginning {
     grid-area: beginning;
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
 
@@ -231,7 +274,7 @@ h3 {
     grid-area: progression;
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
 
@@ -239,11 +282,11 @@ h3 {
     grid-area: complete;
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
 
-.blog img{
+.blog img {
     position: relative;
     width: 10em;
     height: 10em;
@@ -252,18 +295,20 @@ h3 {
     border-radius: 50%;
     object-fit: cover;
 }
-.blog h1{
- background: black;
- color: white;
- font-family: sans-serif;
- transition: visibility 0s, opacity 0.5s linear;
- display: none;
+
+.blog h1 {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    transition: visibility 0s, opacity 0.5s linear;
+    display: none;
 }
-.blog section:hover h1{
- opacity: 1; 
- display: block;
- padding: 0 0.2em;
- text-decoration: underline;
+
+.blog section:hover h1 {
+    opacity: 1;
+    display: block;
+    padding: 0 0.2em;
+    text-decoration: underline;
 }
 
 .blog section a {
@@ -274,11 +319,12 @@ h3 {
 
 .blog section a h1 {
     position: absolute;
-}   
+}
 
-.blog p{
+.blog p {
     padding-top: 2em;
 }
+
 .aboutMe {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -287,14 +333,24 @@ h3 {
         "me uniLife workLife";
     margin: 5em;
     height: 65.6vh;
-    animation:fadein 1s; 
+    animation: fadein 1s;
 }
-@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .aboutMe .me {
     grid-area: me;
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
 
@@ -302,7 +358,7 @@ h3 {
     grid-area: uniLife;
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
 
@@ -310,16 +366,18 @@ h3 {
     grid-area: workLife;
     width: 20em;
     padding: 1em;
-    border:  0.4em ridge gray;
+    border: 0.4em ridge gray;
     text-align: center;
 }
-.aboutMe p{
-    padding:3em;
+
+.aboutMe p {
+    padding: 3em;
 }
 
 .aboutMe h1 {
     text-decoration: underline;
 }
+
 .aboutMe img {
     width: 10em;
     height: 10em;
@@ -328,13 +386,24 @@ h3 {
     background-size: cover;
     object-fit: cover;
 }
+
 .contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation:fadein 1s; 
+    animation: fadein 1s;
 }
-@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .contact form {
     display: grid;
     width: 25em;
@@ -345,9 +414,70 @@ h3 {
     margin: 2em;
     padding: 2em;
 }
-.contact textarea{
-   height: 20em;
+
+.contact textarea {
+    height: 20em;
 }
+
 .contact input[type="submit"] {
     grid-column: 1/3;
 }
+
+.report {
+    text-align: center;
+    margin: 2em;
+}
+.report .validation {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "homepage portfolioPage blogPage"
+    "aboutMePage contactPage reportPage"
+    "mainCSS desktopCSS mobileCSS";
+}
+.report .validation img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.homepage {
+    grid-area: homepage;
+}
+
+.portfolioPage {
+    grid-area: portfolioPage;
+}
+
+.blogPage {
+    grid-area: blogPage;
+}
+
+.aboutMePage {
+    grid-area: aboutMePage;
+}
+
+.contactPage {
+    grid-area: contactPage;
+}
+
+.reportPage {
+    grid-area: reportPage;
+}
+
+.mainCSS {
+    grid-area: mainCSS;
+}
+
+.desktopCSS {
+    grid-area: desktopCSS;
+}
+
+.mobileCSS {
+    grid-area: mobileCSS;
+}
+
