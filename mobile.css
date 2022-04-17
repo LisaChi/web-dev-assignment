@@ -621,3 +621,14 @@ header {
     object-fit: cover;
     margin-left: 1em;
  }
+ .report .reference {
+     width: 25em;
+    border: 0.4em ridge gray;
+    text-decoration: none;
+    text-align: left;
+    font-size: 0.7em;
+    padding: 1.3em;
+}
+.report .reference ul {
+    list-style: circle;
+}

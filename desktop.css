@@ -918,3 +918,11 @@ ul ul li:hover {
     object-fit: cover;
 }
 
+.report .reference {
+    border: 0.4em ridge gray;
+    text-decoration: none;
+    padding: 0.5em;
+}
+.report .reference ul{
+    list-style: none;
+}
