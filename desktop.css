@@ -461,10 +461,12 @@ ul ul li:hover {
         "aboutMePage contactPage reportPage"
         "mainCSS desktopCSS mobileCSS";
 }
-.report .validation h1{
+
+.report .validation h1 {
     grid-area: h1;
     text-decoration: underline;
 }
+
 .report .validation img {
     width: 10em;
     height: 10em;
@@ -610,6 +612,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 .validationPortfolio {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -687,6 +690,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 .validationAboutMe {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -725,6 +729,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 .validationContact {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -763,6 +768,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 .validationSiteReport {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -801,6 +807,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 .validationMain {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -879,6 +886,7 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
 .validationMobile {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -923,6 +931,7 @@ ul ul li:hover {
     text-decoration: none;
     padding: 0.5em;
 }
-.report .reference ul{
+
+.report .reference ul {
     list-style: none;
 }
