@@ -21,7 +21,7 @@ footer {
     grid-template-columns: repeat(7,auto);
     grid-template-rows: auto auto;
     justify-items: right;
-    align-items: right;
+    align-items: center;
     padding: 0 20%;   
 }
 
@@ -33,7 +33,7 @@ nav {
         position: fixed;
         z-index: 1;
         top: 0;
-        left: 50;
+        right: 35.9%;
         background-color: lightgray;
         padding-top: 2em;
         transform: translate(-100%,0);
@@ -217,10 +217,12 @@ header {
 .blog .progression {
     grid-area: progression;
     width: 15em;
+    height: 45em;
     padding: 1em;
     border:  0.4em ridge gray;
     margin: 2em;
     text-align: center;
+    margin-bottom: 20em;
 }
 
 .blog .complete {
@@ -232,7 +234,7 @@ header {
     text-align: center;
 }
 .blog p{
-    padding:3em;
+    padding:0.5em;
 }
 
 .blog h1 {
@@ -248,8 +250,8 @@ header {
 }
 .aboutMe {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     grid-template-areas:
         "aboutMe"
         "uniLife"
@@ -300,7 +302,9 @@ header {
     object-fit: cover;
 }
 .contact{
+    margin-top: 1em;
     animation:fadein 1s; 
+    height: 88.5vh;
 }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
 .contact form {
@@ -323,7 +327,9 @@ header {
     margin: 1em;
     padding: 0.5em;
     text-align: center;
+    animation:fadein 1s; 
 }
+@keyframes fadein { from {opacity:0} to {opacity:1} }
 .report .validation {
     display: grid;
     grid-template-columns:100%;

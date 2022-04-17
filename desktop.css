@@ -19,7 +19,7 @@ footer {
     grid-template-columns: repeat(7,auto);
     grid-template-rows: auto auto;
     justify-items: right;
-    align-items: right;
+    align-items: center;
     padding: 0 20%;   
 }
 
@@ -255,8 +255,7 @@ ul ul li:hover {
     grid-template-rows: auto;
     grid-template-areas:
         "beginning progression complete";
-    height: 65.6vh;
-    margin: 5em;
+    margin: 3em;
     animation: fadein 1s;
 }
 
@@ -276,6 +275,7 @@ ul ul li:hover {
     padding: 1em;
     border: 0.4em ridge gray;
     text-align: center;
+    margin-right: 4em;
 }
 
 .blog .progression {
@@ -296,11 +296,11 @@ ul ul li:hover {
 
 .blog img {
     position: relative;
-    width: 10em;
+    width: 15em;
     height: 10em;
     float: left;
-    margin-right: 10px;
     border-radius: 50%;
+    margin-right: 10px;
     object-fit: cover;
 }
 
@@ -339,8 +339,7 @@ ul ul li:hover {
     grid-template-rows: auto;
     grid-template-areas:
         "me uniLife workLife";
-    margin: 5em;
-    height: 65.6vh;
+    margin: 3em;
     animation: fadein 1s;
 }
 
@@ -435,7 +434,11 @@ ul ul li:hover {
     margin: 1em;
     padding: 0.5em;
     text-align: center;
+    background-color: lightgray;
+    animation:fadein 1s; 
 }
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
 .report .validation {
     display: grid;
     grid-template-columns: 33% 33% 33%;
