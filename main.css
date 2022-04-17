@@ -32,3 +32,14 @@ a {
     justify-content: center;
     align-items: center;
 }
+.button {
+    background-color: lightgray;
+    color:black;
+    border-style: outset;
+    border-color: white;
+    font-size: 1.1em;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 1em;
+    display: inline-block;
+}

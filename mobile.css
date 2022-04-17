@@ -33,7 +33,7 @@ nav {
         position: fixed;
         z-index: 1;
         top: 0;
-        right: 35.9%;
+        right: 36%;
         background-color: lightgray;
         padding-top: 2em;
         transform: translate(-100%,0);
@@ -405,3 +405,219 @@ header {
     background-size: cover;
     object-fit: cover;
   }
+ .validationHome {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationHome .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationHome .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationPortfolio {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationPortfolio .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationPortfolio .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationBlog {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationBlog .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationBlog .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationAboutMe {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationAboutMe .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationAboutMe .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationContact {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationContact .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationContact .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationSiteReport {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationSiteReport .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationSiteReport .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationMain {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationMain .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationMain .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationDesktop {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationDesktop .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationDesktop .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }
+ .validationMobile {
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "validationimg"
+    "validationtext";
+    margin: 2em;
+    height: 81.5vh;
+ } 
+ .validationMobile .validationtext {
+     grid-area: validationtext;
+     text-align: center;
+     justify-content: center;
+ }
+ .validationMobile .validation {
+    grid-area: validationimg;
+    width: 20em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    margin-left: 1em;
+ }

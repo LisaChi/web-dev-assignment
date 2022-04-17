@@ -12,15 +12,16 @@ body {
         "main main"
         "footer footer";
 }
+
 footer {
     background-color: aqua;
     grid-area: footer;
     display: grid;
-    grid-template-columns: repeat(7,auto);
+    grid-template-columns: repeat(7, auto);
     grid-template-rows: auto auto;
     justify-items: right;
     align-items: center;
-    padding: 0 20%;   
+    padding: 0 20%;
 }
 
 .on,
@@ -139,6 +140,7 @@ ul ul li:hover {
     background-color: rgba(0, 0, 0, 0.068);
     text-decoration: underline black;
 }
+
 .mainLeft {
     display: grid;
     grid-template-columns: 100%;
@@ -154,6 +156,7 @@ ul ul li:hover {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes textBig {
     from {
         font-size: 100%
@@ -430,25 +433,39 @@ ul ul li:hover {
     grid-column: 1/3;
 }
 
-.report{
+.report {
     margin: 1em;
     padding: 0.5em;
     text-align: center;
     background-color: lightgray;
-    animation:fadein 1s; 
+    animation: fadein 1s;
 }
-@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 .report .validation {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "homepage portfolioPage blogPage"
-    "aboutMePage contactPage reportPage"
-    "mainCSS desktopCSS mobileCSS";
+    grid-template-areas:
+        "h1 h1 h1"
+        "homepage portfolioPage blogPage"
+        "aboutMePage contactPage reportPage"
+        "mainCSS desktopCSS mobileCSS";
 }
-.report .validation img{
+.report .validation h1{
+    grid-area: h1;
+    text-decoration: underline;
+}
+.report .validation img {
     width: 10em;
     height: 10em;
     border-radius: 50%;
@@ -493,6 +510,7 @@ ul ul li:hover {
 .mobileCSS {
     grid-area: mobileCSS;
 }
+
 .progress {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -553,3 +571,350 @@ ul ul li:hover {
     background-size: cover;
     object-fit: cover;
 }
+
+.validationHome {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationHome .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationHome .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.validationPortfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationPortfolio .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationPortfolio .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.validationBlog {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationBlog .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationBlog .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.validationAboutMe {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationAboutMe .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationAboutMe .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.validationContact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationContact .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationContact .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.validationSiteReport {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationSiteReport .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationSiteReport .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.validationMain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationMain .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationMain .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.validationDesktop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationDesktop .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationDesktop .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.validationMobile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "validationimg validationtext";
+    height: 48.5vh;
+    padding: 3.15em;
+    animation: fadein 1s;
+    margin: 5em;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.validationMobile .validationtext {
+    grid-area: validationtext;
+    padding-left: 0.5em;
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.validationMobile .validationimg {
+    grid-area: validationimg;
+    width: 15em;
+    height: 15em;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
