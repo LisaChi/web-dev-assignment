@@ -79,6 +79,9 @@ nav {
     margin-top: 0.3em;
     border-top: 0.2em solid black;
 }
+nav ul li {
+    list-style: none;
+}
 
 header {
     display: grid;
